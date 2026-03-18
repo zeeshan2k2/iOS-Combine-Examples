@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Dl-QE-2Dq">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xwQ-o7-Ni4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="137.32394366197184"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kHW-vV-yhD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Dl-QE-2Dq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rJd-gD-mDp">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tR7-ea-vmg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNM-II-mDC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="137.32394366197184"/>
+        </scene>
+        <!--Combine Basics View Controller-->
+        <scene sceneID="EVI-yx-EJG">
+            <objects>
+                <viewController storyboardIdentifier="CombineBasicsViewController" id="Nda-2c-c2U" customClass="CombineBasicsViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rWk-ds-827">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lc-2w-3mV">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vxh-L3-aae"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="Nda-2c-c2U" eventType="touchUpInside" id="6C6-Ib-Mvr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UHp-6S-3AL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4lc-2w-3mV" firstAttribute="centerY" secondItem="rWk-ds-827" secondAttribute="centerY" id="aPG-i8-CIa"/>
+                            <constraint firstItem="4lc-2w-3mV" firstAttribute="centerX" secondItem="rWk-ds-827" secondAttribute="centerX" id="f0i-Wq-dDY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orG-a8-ROk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="137"/>
+        </scene>
+        <!--Publisher Subscriber View Controller-->
+        <scene sceneID="aQY-Fk-T1F">
+            <objects>
+                <viewController storyboardIdentifier="PublisherSubscriberViewController" id="MS6-9G-IdU" customClass="PublisherSubscriberViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cx7-eM-ycg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQC-en-Sqe">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GJz-nl-2sP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="MS6-9G-IdU" eventType="touchUpInside" id="XHy-OD-Hpd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YPe-3r-LDu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bQC-en-Sqe" firstAttribute="centerY" secondItem="Cx7-eM-ycg" secondAttribute="centerY" id="G3h-Un-aGn"/>
+                            <constraint firstItem="bQC-en-Sqe" firstAttribute="centerX" secondItem="Cx7-eM-ycg" secondAttribute="centerX" id="vbp-LO-ukg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7w-ly-E59" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3030" y="137"/>
+        </scene>
+        <!--Publishers View Controller-->
+        <scene sceneID="L7X-FZ-y7w">
+            <objects>
+                <viewController storyboardIdentifier="PublishersViewController" id="rAs-wb-Kk6" customClass="PublishersViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="obz-aT-r0v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exq-tc-2xb">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zfv-CO-iaP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="rAs-wb-Kk6" eventType="touchUpInside" id="FAL-5H-HUz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qA2-PA-1GJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="exq-tc-2xb" firstAttribute="centerX" secondItem="obz-aT-r0v" secondAttribute="centerX" id="Nxk-NL-mSv"/>
+                            <constraint firstItem="exq-tc-2xb" firstAttribute="centerY" secondItem="obz-aT-r0v" secondAttribute="centerY" id="ebL-xR-JxG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VJ-Xj-Jgp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="899"/>
+        </scene>
+        <!--Subjects View Controller-->
+        <scene sceneID="1ch-8c-D0T">
+            <objects>
+                <viewController storyboardIdentifier="SubjectsViewController" id="40V-SL-jR0" customClass="SubjectsViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbK-Ce-1OT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPz-4j-mFf">
+                                <rect key="frame" x="25" y="409" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5sL-Ts-wE6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RtK-cd-Dxi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SPz-4j-mFf" firstAttribute="leading" secondItem="RtK-cd-Dxi" secondAttribute="leading" constant="25" id="9zf-uT-h63"/>
+                            <constraint firstItem="SPz-4j-mFf" firstAttribute="centerX" secondItem="cbK-Ce-1OT" secondAttribute="centerX" id="INj-Qn-e1s"/>
+                            <constraint firstItem="SPz-4j-mFf" firstAttribute="centerY" secondItem="cbK-Ce-1OT" secondAttribute="centerY" id="hcL-ms-msd"/>
+                            <constraint firstItem="RtK-cd-Dxi" firstAttribute="trailing" secondItem="SPz-4j-mFf" secondAttribute="trailing" constant="25" id="i2X-7g-jwU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="SPz-4j-mFf" id="xmU-Um-Giy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cD-En-QuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3029.770992366412" y="907.74647887323943"/>
+        </scene>
+        <!--Subscribers View Controller-->
+        <scene sceneID="weF-k0-oxW">
+            <objects>
+                <viewController storyboardIdentifier="SubscribersViewController" id="j7c-XF-jNd" customClass="SubscribersViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MBG-WB-fjG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-t1-yNo">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0V8-6Y-2ol"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="j7c-XF-jNd" eventType="touchUpInside" id="aF5-uP-bBd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NQk-Xk-ZfE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FPg-t1-yNo" firstAttribute="centerY" secondItem="MBG-WB-fjG" secondAttribute="centerY" id="Aig-pj-iRK"/>
+                            <constraint firstItem="FPg-t1-yNo" firstAttribute="centerX" secondItem="MBG-WB-fjG" secondAttribute="centerX" id="ihY-Ap-I2v"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oz6-0C-8V8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2069" y="909"/>
+        </scene>
+        <!--Operators View Controller-->
+        <scene sceneID="eyA-St-Pxv">
+            <objects>
+                <viewController storyboardIdentifier="OperatorsViewController" id="jeR-Ii-Cqg" customClass="OperatorsViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tcr-WP-43h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grd-ZW-gBE">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mMx-YL-tbi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="jeR-Ii-Cqg" eventType="touchUpInside" id="SNx-Fi-rqe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mx5-ob-vrt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Grd-ZW-gBE" firstAttribute="centerX" secondItem="tcr-WP-43h" secondAttribute="centerX" id="Gec-YS-CTv"/>
+                            <constraint firstItem="Grd-ZW-gBE" firstAttribute="centerY" secondItem="tcr-WP-43h" secondAttribute="centerY" id="q3w-SW-IZS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIG-IR-oqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="1716"/>
+        </scene>
+        <!--Combine Streams View Controller-->
+        <scene sceneID="KUt-Fa-fUS">
+            <objects>
+                <viewController storyboardIdentifier="CombineStreamsViewController" id="3aL-EU-fWy" customClass="CombineStreamsViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MCJ-Ap-SE5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="eck-bt-0C6">
+                                <rect key="frame" x="25" y="376" width="343" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AZ-7u-D6a">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="V17-Vl-too"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="usernameChanged:" destination="3aL-EU-fWy" eventType="editingChanged" id="85u-qd-2X3"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dam-jH-FiA">
+                                        <rect key="frame" x="0.0" y="66" width="343" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="q5e-Il-SwM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="passwordChanged:" destination="3aL-EU-fWy" eventType="editingChanged" id="RZC-QS-sCa"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nbz-G3-JsQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nbz-G3-JsQ" firstAttribute="trailing" secondItem="eck-bt-0C6" secondAttribute="trailing" constant="25" id="Dnx-uZ-X41"/>
+                            <constraint firstItem="eck-bt-0C6" firstAttribute="centerY" secondItem="MCJ-Ap-SE5" secondAttribute="centerY" id="Koc-uQ-hZ6"/>
+                            <constraint firstItem="eck-bt-0C6" firstAttribute="centerX" secondItem="MCJ-Ap-SE5" secondAttribute="centerX" id="gZJ-Ci-cQu"/>
+                            <constraint firstItem="eck-bt-0C6" firstAttribute="leading" secondItem="Nbz-G3-JsQ" secondAttribute="leading" constant="25" id="lA9-wP-ace"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordField" destination="Dam-jH-FiA" id="doq-7L-igZ"/>
+                        <outlet property="usernameField" destination="2AZ-7u-D6a" id="USX-OC-Y4b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z49-DH-J9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2058.7786259541986" y="1714.7887323943662"/>
+        </scene>
+        <!--Combine Error Handling View Controller-->
+        <scene sceneID="Z3a-cD-X5k">
+            <objects>
+                <viewController storyboardIdentifier="CombineErrorHandlingViewController" id="RuP-gd-hOn" customClass="CombineErrorHandlingViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WZ4-OO-kf9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJv-zU-OkT">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Zjq-Mv-uAq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="RuP-gd-hOn" eventType="touchUpInside" id="wsO-Oy-Ptq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="371-7B-NrY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vJv-zU-OkT" firstAttribute="centerY" secondItem="WZ4-OO-kf9" secondAttribute="centerY" id="BZN-Be-OOj"/>
+                            <constraint firstItem="vJv-zU-OkT" firstAttribute="centerX" secondItem="WZ4-OO-kf9" secondAttribute="centerX" id="k4H-Gf-v4h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exQ-ed-vrC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3030" y="1715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
