@@ -151,39 +151,38 @@ class MainMenuViewController: UITableViewController {
             ) as! CombineErrorHandlingViewController
             
             navigationController?.pushViewController(vc, animated: true)
-        }
 
-//        } else if indexPath.section == 5 && indexPath.row == 0 {
-//
-//            let vc = storyboardRef.instantiateViewController(
-//                withIdentifier: "CombineNetworkingViewController"
-//            ) as! CombineNetworkingViewController
-//
-//            navigationController?.pushViewController(vc, animated: true)
-//
-//        } else if indexPath.section == 5 && indexPath.row == 1 {
-//
-//            let vc = storyboardRef.instantiateViewController(
-//                withIdentifier: "TimerPublisherViewController"
-//            ) as! TimerPublisherViewController
-//
-//            navigationController?.pushViewController(vc, animated: true)
-//
-//        } else if indexPath.section == 5 && indexPath.row == 2 {
-//
-//            let vc = storyboardRef.instantiateViewController(
-//                withIdentifier: "CombineUIBindingViewController"
-//            ) as! CombineUIBindingViewController
-//
-//            navigationController?.pushViewController(vc, animated: true)
-//
-//        } else if indexPath.section == 6 && indexPath.row == 0 {
-//
-//            let vc = storyboardRef.instantiateViewController(
-//                withIdentifier: "CombineMemoryManagementViewController"
-//            ) as! CombineMemoryManagementViewController
-//
-//            navigationController?.pushViewController(vc, animated: true)
-//        }
+        } else if indexPath.section == 5 && indexPath.row == 0 {
+            
+            let vc = storyboardRef.instantiateViewController(
+                withIdentifier: "CombineNetworkingViewController"
+            ) as! CombineNetworkingViewController
+            
+            navigationController?.pushViewController(vc, animated: true)
+            
+        } else if indexPath.section == 5 && indexPath.row == 1 {
+            
+            let vc = storyboardRef.instantiateViewController(
+                withIdentifier: "TimerPublisherViewController"
+            ) as! TimerPublisherViewController
+            
+            navigationController?.pushViewController(vc, animated: true)
+
+        } else if indexPath.section == 5 && indexPath.row == 2 {
+            
+            let vc = storyboardRef.instantiateViewController(
+                withIdentifier: "CombineUIBindingViewController"
+            ) as! CombineUIBindingViewController
+            
+            navigationController?.pushViewController(vc, animated: true)
+
+        } else if indexPath.section == 6 && indexPath.row == 0 {
+
+            let vc = storyboardRef.instantiateViewController(
+                withIdentifier: "CombineMemoryManagementViewController"
+            ) as! CombineMemoryManagementViewController
+
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Dl-QE-2Dq">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides isEnabled="YES" dynamicTypePreference="3"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -290,10 +291,10 @@
             </objects>
             <point key="canvasLocation" x="2058.7786259541986" y="1714.7887323943662"/>
         </scene>
-        <!--Combine Error Handling View Controller-->
+        <!--Combine Networking View Controller-->
         <scene sceneID="Z3a-cD-X5k">
             <objects>
-                <viewController storyboardIdentifier="CombineErrorHandlingViewController" id="RuP-gd-hOn" customClass="CombineErrorHandlingViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CombineNetworkingViewController" id="RuP-gd-hOn" customClass="CombineNetworkingViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WZ4-OO-kf9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,7 +307,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
                                 <connections>
-                                    <action selector="runExample:" destination="RuP-gd-hOn" eventType="touchUpInside" id="wsO-Oy-Ptq"/>
+                                    <action selector="runExample:" destination="RuP-gd-hOn" eventType="touchUpInside" id="KgH-7d-Q7B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -320,7 +321,146 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exQ-ed-vrC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3030" y="1715"/>
+            <point key="canvasLocation" x="1063" y="2513"/>
+        </scene>
+        <!--Combine Error Handling View Controller-->
+        <scene sceneID="Tyu-Kb-nIO">
+            <objects>
+                <viewController storyboardIdentifier="CombineErrorHandlingViewController" id="bh1-mS-LMd" customClass="CombineErrorHandlingViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Itu-Yp-OZe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-u6-lra">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h4j-a8-ivS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="bh1-mS-LMd" eventType="touchUpInside" id="4G8-hk-uC6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QmH-L6-QXa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XCq-u6-lra" firstAttribute="centerX" secondItem="Itu-Yp-OZe" secondAttribute="centerX" id="53v-8w-sNB"/>
+                            <constraint firstItem="XCq-u6-lra" firstAttribute="centerY" secondItem="Itu-Yp-OZe" secondAttribute="centerY" id="Vj9-xO-PHl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYr-wb-uPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040" y="1725"/>
+        </scene>
+        <!--Timer Publisher View Controller-->
+        <scene sceneID="IAK-HT-p4A">
+            <objects>
+                <viewController storyboardIdentifier="TimerPublisherViewController" id="kZF-Fh-KB1" customClass="TimerPublisherViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A4D-o0-RdO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="764-TH-G6o">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5QT-bV-uVe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="kZF-Fh-KB1" eventType="touchUpInside" id="oLe-3g-hRi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ETT-cC-oKO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="764-TH-G6o" firstAttribute="centerY" secondItem="A4D-o0-RdO" secondAttribute="centerY" id="3e7-j6-ib9"/>
+                            <constraint firstItem="764-TH-G6o" firstAttribute="centerX" secondItem="A4D-o0-RdO" secondAttribute="centerX" id="eIM-s6-Q6g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXn-2t-luJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="2513"/>
+        </scene>
+        <!--CombineUI Binding View Controller-->
+        <scene sceneID="Bh4-Pi-nJO">
+            <objects>
+                <viewController storyboardIdentifier="CombineUIBindingViewController" id="yft-18-oDY" customClass="CombineUIBindingViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nnV-8P-cuM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nse-bq-jBI">
+                                <rect key="frame" x="25" y="409" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vBf-UR-vsR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGx-YV-QjI">
+                                <rect key="frame" x="176" y="357.66666666666669" width="41.333333333333343" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wwI-Kr-7EG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VGx-YV-QjI" firstAttribute="centerX" secondItem="Nse-bq-jBI" secondAttribute="centerX" id="7Na-VL-2h7"/>
+                            <constraint firstItem="Nse-bq-jBI" firstAttribute="centerY" secondItem="nnV-8P-cuM" secondAttribute="centerY" id="Ca8-Ps-LFR"/>
+                            <constraint firstItem="Nse-bq-jBI" firstAttribute="leading" secondItem="wwI-Kr-7EG" secondAttribute="leading" constant="25" id="LSR-CG-B19"/>
+                            <constraint firstItem="wwI-Kr-7EG" firstAttribute="trailing" secondItem="Nse-bq-jBI" secondAttribute="trailing" constant="25" id="TAb-pa-FTs"/>
+                            <constraint firstItem="Nse-bq-jBI" firstAttribute="centerX" secondItem="nnV-8P-cuM" secondAttribute="centerX" id="V61-sz-c5Z"/>
+                            <constraint firstItem="Nse-bq-jBI" firstAttribute="top" secondItem="VGx-YV-QjI" secondAttribute="bottom" constant="31" id="efu-be-1LJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="VGx-YV-QjI" id="gR2-Sq-p8G"/>
+                        <outlet property="textField" destination="Nse-bq-jBI" id="8wg-P9-0pp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ily-GE-Z3k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3039" y="2513"/>
+        </scene>
+        <!--Combine Memory Management View Controller-->
+        <scene sceneID="spl-io-8O9">
+            <objects>
+                <viewController storyboardIdentifier="CombineMemoryManagementViewController" id="vTw-cE-bKG" customClass="CombineMemoryManagementViewController" customModule="iOS_Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R1l-Fl-IZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7L-WK-VCN">
+                                <rect key="frame" x="135.33333333333334" y="401" width="122.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NF9-Kv-p0g"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run Example"/>
+                                <connections>
+                                    <action selector="runExample:" destination="vTw-cE-bKG" eventType="touchUpInside" id="8F6-zb-IWb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jR7-bK-ptn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x7L-WK-VCN" firstAttribute="centerX" secondItem="R1l-Fl-IZ5" secondAttribute="centerX" id="OxI-Qv-Wv8"/>
+                            <constraint firstItem="x7L-WK-VCN" firstAttribute="centerY" secondItem="R1l-Fl-IZ5" secondAttribute="centerY" id="vzR-AK-j5B"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ge-4M-qjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="3289"/>
         </scene>
     </scenes>
     <resources>
