@@ -14,7 +14,7 @@ This repository contains small, focused examples built while learning Combine. T
 
 <p>
 Detailed learning notes and experiments can be found here:<br>
-<a href="YOUR_NOTION_LINK_HERE">
+<a href="https://secretive-fascinator-c6c.notion.site/Combine-GitHub-31ad7fcea3528066990eed4a6d961192">
 Combine Notes (Notion)
 </a>
 </p>
